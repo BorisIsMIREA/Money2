@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/TopText"
+            android:textColor="@color/Black"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/One"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textTop"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/Spin0"
+                style="@style/MySpinner"></Spinner>
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/ButtonID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/One"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/ButtonText" />
+
+        <LinearLayout
+            android:id="@+id/OneLand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/ButtonID">
+
+            <Spinner
+                android:id="@+id/Spin1"
+                style="@style/MySpinner"></Spinner>
+
+            <Spinner
+                android:id="@+id/Spin2"
+                style="@style/MySpinner"
+                android:layout_marginTop="5dp"></Spinner>
+
+            <Spinner
+                android:id="@+id/Spin3"
+                style="@style/MySpinner"
+                android:layout_marginTop="5dp"></Spinner>
+
+            <Spinner
+                android:id="@+id/Spin4"
+                style="@style/MySpinner"
+                android:layout_marginTop="5dp"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/ButtonID"
+            android:layout_toRightOf="@id/OneLand">
+            <TextView
+                android:id="@+id/Text1"
+                style="@style/MyTextView" />
+            <TextView
+                android:id="@+id/Text2"
+                style="@style/MyTextView"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/Text3"
+                style="@style/MyTextView"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/Text4"
+                style="@style/MyTextView"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

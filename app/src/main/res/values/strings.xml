@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Money</string>
+    
+    <string-array name="Mon">
+        <item>RUB</item>
+        <item>EUR</item>
+        <item>USD</item>
+        <item>BTC</item>
+        <item>GBP</item>
+    </string-array>
+
+    <string name="TopText">Укажите валюту:</string>
+    <string name="ButtonText">Расчитать</string>
+</resources>
